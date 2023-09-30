@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import SectionHeading from './SectionHeading';
 import { API_ROUTES, JIKAN_BASE_URL } from '@/services/config';
-import { LatestUpdatedVideos } from '@/types';
+import { LatestUpdatedVideos } from '@/types/anime';
 import { Icons } from './Icons';
 
 const getLatestEpisodes = async () => {
@@ -40,7 +40,6 @@ export default function LatestUpdatedEpisodeVideos() {
                 src={video.entry.images.webp.image_url}
                 fill
                 alt='episode picture'
-                // className='object-cover'
               />
             </div>
             <div className='my-2'>
